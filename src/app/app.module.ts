@@ -4,11 +4,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { WriteComponent } from './write/write.component';
 import { ReadComponent } from './read/read.component';
 import { TimerComponent } from './read/timer/timer.component';
+
 import { SecondsToTimePipe } from './read/timer/seconds-to-time.pipe';
+
+import { SharedService } from './shared.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,7 @@ import { SecondsToTimePipe } from './read/timer/seconds-to-time.pipe';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

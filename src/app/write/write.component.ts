@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { State, SharedService } from './../shared.service';
 
 @Component({
   selector: 'aymen-write',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WriteComponent implements OnInit {
 
-  constructor() { }
+  public state: State;
+
+  constructor(private sharedService: SharedService) { }
 
   ngOnInit() {
+  }
+
+  submit(): void {
+    const state: State = {
+      test1: 'bim1',
+      test2: 'bim2'
+    };
+    this.sharedService.updateState(state);
   }
 
 }

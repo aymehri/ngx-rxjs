@@ -1,3 +1,4 @@
+import { SharedService } from './../shared.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReadComponent implements OnInit {
 
-  constructor() { }
+  test1$ = this.sharedService.select<string>('test1');
+  test2$ = this.sharedService.select<string>('test2');
+
+  constructor(private sharedService: SharedService) { }
 
   ngOnInit() {
   }
