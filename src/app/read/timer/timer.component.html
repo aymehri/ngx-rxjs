@@ -1,0 +1,11 @@
+<p>
+  timer works!
+</p>
+
+<button (click)="start$.next()">Start</button>
+<button (click)="stop$.next()">Stop</button>
+<button (click)="reset$.next()">Reset</button>
+<button (click)="startWith$.next(1000000)">StartWith</button>
+
+{{aymen$ | async | secondsToTime}}
+

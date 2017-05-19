@@ -5,10 +5,16 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { WriteComponent } from './write/write.component';
+import { ReadComponent } from './read/read.component';
+import { TimerComponent } from './read/timer/timer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WriteComponent,
+    ReadComponent,
+    TimerComponent
   ],
   imports: [
     BrowserModule,
