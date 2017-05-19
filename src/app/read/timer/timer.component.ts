@@ -1,10 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
-import { Observable } from 'rxjs/Observable';
 
+import {Observable} from 'rxjs/Rx'
+
+/*
+import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/timeInterval';
 import 'rxjs/add/operator/merge';
 import 'rxjs/add/operator/takeUntil';
+*/
 
 @Component({
   selector: 'aymen-timer',

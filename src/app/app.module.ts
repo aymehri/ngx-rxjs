@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { WriteComponent } from './write/write.component';
 import { ReadComponent } from './read/read.component';
 import { TimerComponent } from './read/timer/timer.component';
+import { SecondsToTimePipe } from './read/timer/seconds-to-time.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     WriteComponent,
     ReadComponent,
-    TimerComponent
+    TimerComponent,
+    SecondsToTimePipe
   ],
   imports: [
     BrowserModule,
